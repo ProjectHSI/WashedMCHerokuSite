@@ -2,7 +2,6 @@ console.log("Starting NJS Process.")
 const http = require("http")
 const fs = require("fs")
 console.log("Loaded Libraries.")
-console.log(process.env)
 http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html'});
     switch (req.url) {
@@ -14,5 +13,5 @@ http.createServer((req, res) => {
             res.end(fs.readFileSync("./404.html"))
             break;
     }
-}).listen(80)
-console.log("Started...")
+}).listen(process.env.PORT)
+console.log(`Started... Port ${process.env.PORT}`)
