@@ -1,5 +1,7 @@
+console.log("Starting NJS Process.")
 const http = require("http")
 const fs = require("fs")
+console.log("Loaded Libraries.")
 http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html'});
     switch (req.url) {
@@ -12,3 +14,4 @@ http.createServer((req, res) => {
             break;
     }
 }).listen(80)
+console.log("Started...")

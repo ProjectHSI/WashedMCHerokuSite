@@ -4,7 +4,7 @@
   "description": "The Heroku Version of the WashedMC Site.",
   "main": "SiteHost.js",
   "scripts": {
-    "test": "node ."
+    "start": "node ."
   },
   "repository": {
     "type": "git",
