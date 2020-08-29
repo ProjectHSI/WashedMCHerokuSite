@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    border: 10px double white;
+}
+
+.info {
+    text-align: center;
+    color: white;
+}
+
+.pinfo {
+    text-align: center;
+    color: white;
+    text-decoration-line: underline;
+}
+
+.infodiv {
+    border: 20px double white;
+}
