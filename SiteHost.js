@@ -6,6 +6,7 @@ http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html'});
     switch (req.url) {
         case "/404.css":
+            res.writeHead(200, {'Content-Type': 'text/css'});
             res.end(fs.readFileSync("./404.css"))
             break;
         default:
