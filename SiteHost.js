@@ -2,6 +2,7 @@ console.log("Starting NJS Process.")
 const http = require("http")
 const fs = require("fs")
 console.log("Loaded Libraries.")
+console.log(process.env)
 http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html'});
     switch (req.url) {
